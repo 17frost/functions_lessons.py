@@ -3,7 +3,15 @@
 
 # Don't call the function, you just need to define it.
 
+list_numbers=[10, 25, -3, 42, 7]
 
+def all_positive(list_numbers):
+    for num in list_numbers:
+        if num < 0:
+            return False
+    return True
+num = all_positive(list_numbers)
+print(num)
 
 
 
@@ -18,3 +26,5 @@
 
 # Dynamic Functions Practice #3
 # Create a function (count_even) that counts the number of even numbers that exist in a list (numbers), and returns the result of said count.
+def count_even(evens):
+    
